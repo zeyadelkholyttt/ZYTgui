@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>294</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>294</width>
+    <height>623</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>294</width>
+    <height>623</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Qanelas ExtraBold</family>
+    <pointsize>14</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ZYT Downloader</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+&lt;RCC warning=&quot;WARNING! File created programmatically. All changes made in this file will be lost!&quot;&gt;
+  &lt;qresource prefix=&quot;qss_icons/dark&quot;&gt;
+    &lt;file&gt;rc/arrow_down.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_down_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_left_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_right_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/arrow_up_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/base_icon_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_closed_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_end_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_line_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_more_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/branch_open_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_checked_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_indeterminate_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/checkbox_unchecked_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/line_horizontal_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/line_vertical_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_checked_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/radio_unchecked_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_horizontal_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_move_vertical_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_horizontal_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/toolbar_separator_vertical_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/transparent_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/window_close_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/window_grip_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/window_minimize_pressed@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_disabled.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_disabled@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_focus.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_focus@2x.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_pressed.png&lt;/file&gt;
+    &lt;file&gt;rc/window_undock_pressed@2x.png&lt;/file&gt;
+  &lt;/qresource&gt;
+  &lt;qresource prefix=&quot;qdarkstyle/dark&quot;&gt;
+      &lt;file&gt;darkstyle.qss&lt;/file&gt;
+  &lt;/qresource&gt;
+&lt;/RCC&gt;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-11</x>
+      <y>-1</y>
+      <width>501</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+
+	background-color: rgb(179, 179, 179);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 81 20pt &quot;Qanelas ExtraBold&quot;;
+	
+	color: rgb(242, 90, 58);
+}</string>
+     </property>
+     <property name="text">
+      <string>ZYT Downlaoder!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 10pt &quot;Qanelas ExtraBold&quot;;
+	
+	color: rgb(242, 90, 58);
+}</string>
+     </property>
+     <property name="text">
+      <string>By zeyad elkholy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 10pt &quot;Qanelas ExtraBold&quot;;
+	
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Enter The URL Link :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>281</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	border-radius: 10px;
+	border-color: rgb(47, 47, 42);
+	border-width: 2px;
+	border-style: solid;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 10pt &quot;Qanelas ExtraBold&quot;;
+	
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Enter The Path :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	border-radius: 10px;
+	border-color: rgb(47, 47, 42);
+	border-width: 2px;
+	border-style: solid;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>570</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(244, 244, 244);
+}
+QPushButton::hover{
+border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton::pressed{
+border-width: 1px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}</string>
+     </property>
+     <property name="text">
+      <string>downlaod</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>280</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 12pt &quot;Qanelas ExtraBold&quot;;
+	
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>select format :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>360</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 12pt &quot;Qanelas ExtraBold&quot;;
+	
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>select resolution :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>220</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(244, 244, 244);
+}
+QPushButton::hover{
+border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton::pressed{
+border-width: 1px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}</string>
+     </property>
+     <property name="text">
+      <string>select</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>410</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>380</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>250</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="video">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator::unchecked {
+     border-width: 2px;
+     border-style: solid;
+     border-color: black;
+	border-radius:4px
+ }
+QRadioButton::indicator::checked {
+	
+	background-color: rgb(47, 47, 42);
+     border-width: 2px;
+     border-style: solid;
+	 border-radius:4px;
+	 border-color: black;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>video</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="playlist">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator::unchecked {
+	font: 81 8pt &quot;Qanelas ExtraBold&quot;;
+     border-width: 2px;
+     border-style: solid;
+     border-color: black;
+	border-radius:4px
+ }
+QRadioButton::indicator::checked {
+	
+	background-color: rgb(47, 47, 42);
+     border-width: 2px;
+     border-style: solid;
+	 border-radius:4px;
+	 border-color: black;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>playlist</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>380</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(244, 244, 244);
+}
+QPushButton::hover{
+border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton::pressed{
+border-width: 1px;
+	border-radius: 5px;
+	border-color: black;
+	border-style:solid;
+	background-color: rgb(217, 217, 217);
+}</string>
+     </property>
+     <property name="text">
+      <string>search</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>310</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="audio">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator::unchecked {
+     border-width: 2px;
+     border-style: solid;
+     border-color: black;
+	border-radius:4px
+ }
+QRadioButton::indicator::checked {
+	
+	background-color: rgb(47, 47, 42);
+     border-width: 2px;
+     border-style: solid;
+	 border-radius:4px;
+	 border-color: black;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>mp3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="mp4">
+        <property name="styleSheet">
+         <string notr="true">QRadioButton::indicator::unchecked {
+     border-width: 2px;
+     border-style: solid;
+     border-color: black;
+	border-radius:4px
+ }
+QRadioButton::indicator::checked {
+	
+	background-color: rgb(47, 47, 42);
+     border-width: 2px;
+     border-style: solid;
+	 border-radius:4px;
+	 border-color: black;
+ }
+</string>
+        </property>
+        <property name="text">
+         <string>mp4</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 81 12pt &quot;Qanelas ExtraBold&quot;;
+	
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>480</y>
+       <width>261</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: rgb(250, 143, 145);
+	font: 9pt &quot;Roboto&quot;;
+	
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resurcese.qrc"/>
+ </resources>
+ <connections/>
+</ui>
